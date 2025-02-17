@@ -1,9 +1,9 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose";
 
 async function main(){
     try {
         await mongoose.connect(
-            "mongodb+srv://LinkMongoDB",
+            "",
         );
         console.log("Banco de dados conectado!!")
     } catch (error) {
@@ -11,4 +11,4 @@ async function main(){
     }
 }
 
-module.exports = main;
+export default main
