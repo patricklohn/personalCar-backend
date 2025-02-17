@@ -24,8 +24,19 @@ async function createService(req,res){
     }
 }
 
+async function getAllService(req,res){
+    try {
+        const allService = await ServiceModel.find()
+        res.status(200).json(allService)
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({message: "Internal error Server!"});
+    }
+}
+
 //module.exports = serviceController;
 
 export default {
     createService,
+    getAllService
 };
