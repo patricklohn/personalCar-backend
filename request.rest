@@ -1,3 +1,5 @@
+### Create
+
 POST http://localhost:5000/api/services
 Content-Type: application/json
 
@@ -8,6 +10,26 @@ Content-Type: application/json
     "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg" 
 }
 
-###
+### GetALL
 
 GET http://localhost:5000/api/services
+
+### GetOne
+
+GET http://localhost:5000/api/services/67b2b26ea25c8c77302a9631
+
+### Delete
+
+DELETE http://localhost:5000/api/services/67b2b2334614a4833f9be34a
+
+### Edit
+
+PUT http://localhost:5000/api/services/67b2b26ea25c8c77302a9631
+Content-Type: application/json
+
+{
+    "name": "Pintura de Lataria",
+    "description": "Troca de cor do carro",
+    "price": 1400,
+    "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg" 
+}
