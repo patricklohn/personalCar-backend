@@ -4,7 +4,7 @@ POST http://localhost:5000/api/services
 Content-Type: application/json
 
 {
-    "name": "Algum Serviço",
+    "name": "Algum Serviço3",
     "description": "Exemplo de descrição",
     "price": 1400,
     "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg" 
@@ -32,4 +32,32 @@ Content-Type: application/json
     "description": "Troca de cor do carro",
     "price": 1400,
     "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg" 
+}
+
+### Create Car
+
+POST http://localhost:5000/api/carCreate
+Content-Type: application/json
+
+{
+    "name": "Algum Carro2",
+    "brand": "Chevrolet",
+    "description": "Exemplo de descrição",
+    "mode": "Onix",
+    "budget": 2800,
+    "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg",
+    "services": [
+        {
+            "name": "Pintura de Lataria",
+            "description": "Troca de cor do carro",
+            "price": 1400,
+            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"
+        },
+        {
+            "name": "Algum Serviço2",
+            "description": "Exemplo de descrição",
+            "price": 1400,
+            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"    
+        }
+    ]
 }
