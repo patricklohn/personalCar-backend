@@ -1,18 +1,11 @@
-const express = require("express")
-const cors = require("cors")
-const app = express(); 
+import app from "./src/app.js"
 
-const port = 3000;
+/*Routes
+    const routes = require(./src/router/routes.js);
+*/
 
-app.use(cors())
-app.use(express.json())
+const PORT = 5000;
 
-// DB Connection
+app.listen(PORT,() => console.log(`listening on port ${PORT} -> http://localhost:${PORT}`));
 
-const conn = require("./db/conn")
-conn();
-
-app.listen(port, function(){
-    console.log("Servidor Online!!")
-})
 
