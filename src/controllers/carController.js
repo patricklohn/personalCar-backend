@@ -41,6 +41,17 @@ async function createCar(req,res){
     }
 }
 
+async function getAllCar(req,res){
+    try {
+        const carAll = await Car.find();
+        res.status(200).json(carAll);
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({menssage: "Internal Error Server!"})
+    }
+}
+
 export default {
     createCar,
+    getAllCar
 }

@@ -61,3 +61,7 @@ Content-Type: application/json
         }
     ]
 }
+
+### GetALL
+
+GET http://localhost:5000/api/carGet
