@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const {Schema} = mongoose
 
-const {serviceSchema} = require("./Service")
+import {serviceSchema} from "./Service.js";
 
 const carSchema = new Schema({
     name: {
-        trype: {
+        type: {
             type: String,
             require: true
         }
@@ -32,7 +32,7 @@ const carSchema = new Schema({
         require: true
     },
     services:{
-        trype:[serviceSchema],
+        type:[serviceSchema],
     }
 },{timestamps: true});
 
