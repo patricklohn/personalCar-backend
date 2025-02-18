@@ -73,3 +73,30 @@ GET http://localhost:5000/api/carGet/67b3c53a1b50e0f55144646a
 ### Delete 
 
 DELETE http://localhost:5000/api/carGet/67b3c53a1b50e0f55144646a
+
+### Edit
+PUT http://localhost:5000/api/carGet/67b3c5d31b50e0f551446471
+Content-Type: application/json
+
+{
+    "name": "Onix",
+    "brand": "Chevrolet",
+    "description": "Carro prata semi novo",
+    "mode": "Onix LTZ 2016",
+    "budget": 3000,
+    "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg",
+    "services": [
+        {
+            "name": "Pintura de Lataria",
+            "description": "Troca de cor do carro",
+            "price": 1400,
+            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"
+        },
+        {
+            "name": "Algum Serviço2",
+            "description": "Exemplo de descrição",
+            "price": 1400,
+            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"    
+        }
+    ]
+}
