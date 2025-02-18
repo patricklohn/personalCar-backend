@@ -51,7 +51,34 @@ async function getAllCar(req,res){
     }
 }
 
+async function getCar(req,res){
+    try {
+        const id = req.params.id; 
+        const carGet = await Car.findById(id);
+
+        res.status(200).json(carGet);
+
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({menssage: "Internal Error Server!"})
+    }
+}
+
+async function deleteCar(req,res){
+    try {
+        const id = req.params.id;
+        const deleteCar = await Car.findByIdAndDelete(id);
+
+        res.status(200).json({message: "Car deletado com sucesso", deleteCar})
+    } catch (error) {
+        console.log(error)
+        res.status(500).json({menssage: "Internal Error Server!"})
+    }
+}
+
 export default {
     createCar,
-    getAllCar
+    getAllCar,
+    getCar,
+    deleteCar
 }
