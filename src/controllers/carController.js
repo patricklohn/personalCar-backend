@@ -26,12 +26,12 @@ async function createCar(req,res){
         // budget < valor dos serviços 
 
         if(car.services && !checkCarBudget(car.budget, car.services)){
-            res.status(406).json({message:"buget é menor services price"})
+            res.status(406).json({menssage:"buget é menor services price"})
             return
         }
 
         const carCreate = await Car.create(car);
-
+        console.log(car)
         res.status(201).json({carCreate, menssage:"Criado cadastro com sucesso!"})
 
 
