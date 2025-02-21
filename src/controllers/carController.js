@@ -31,7 +31,6 @@ async function createCar(req,res){
         }
 
         const carCreate = await Car.create(car);
-        console.log(car)
         res.status(201).json({carCreate, menssage:"Criado cadastro com sucesso!"})
 
 
