@@ -26,12 +26,11 @@ async function createCar(req,res){
         // budget < valor dos serviços 
 
         if(car.services && !checkCarBudget(car.budget, car.services)){
-            res.status(406).json({message:"buget é menor services price"})
+            res.status(406).json({menssage:"buget é menor services price"})
             return
         }
 
         const carCreate = await Car.create(car);
-
         res.status(201).json({carCreate, menssage:"Criado cadastro com sucesso!"})
 
 
@@ -57,7 +56,7 @@ async function getCar(req,res){
         const carGet = await Car.findById(id);
 
         if(!carGet){
-            res.status(404).json({message:"Não foi encontrado nenhum Carro!!"})
+            res.status(404).json({menssage:"Não foi encontrado nenhum Carro!!"})
             return 
         }
 
@@ -74,7 +73,7 @@ async function deleteCar(req,res){
         const id = req.params.id;
         const deleteCar = await Car.findByIdAndDelete(id);
 
-        if(!carGet){
+        if(!deleteCar){
             res.status(404).json({message:"Não foi encontrado nenhum Carro!!"})
             return
         }

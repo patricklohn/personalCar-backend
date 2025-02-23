@@ -4,11 +4,11 @@ POST http://localhost:5000/api/services
 Content-Type: application/json
 
 {
-    "name": "Algum Serviço3",
-    "description": "Exemplo de descrição",
-    "price": 1400,
-    "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg" 
-}
+    "name": "Sistema de Som",
+    "description": "Instalação de um sistema de som personalizado, com alto-falantes, amplificadores, subwoofer e outros componentes, para um som de alta qualidade no interior do veículo.",
+    "price": 1200,
+    "image": "https://blog.lojadesomautomotivo.com.br/wp-content/uploads/kit-som-automotivo.jpg"
+  }
 
 ### GetALL
 
@@ -43,7 +43,7 @@ Content-Type: application/json
     "name": "Algum Carro2",
     "brand": "Chevrolet",
     "description": "Exemplo de descrição",
-    "mode": "Onix",
+    "model": "Onix",
     "budget": 2800,
     "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg",
     "services": [
@@ -83,20 +83,6 @@ Content-Type: application/json
     "brand": "Chevrolet",
     "description": "Carro prata semi novo",
     "mode": "Onix LTZ 2016",
-    "budget": 3000,
-    "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg",
-    "services": [
-        {
-            "name": "Pintura de Lataria",
-            "description": "Troca de cor do carro",
-            "price": 1400,
-            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"
-        },
-        {
-            "name": "Algum Serviço2",
-            "description": "Exemplo de descrição",
-            "price": 1400,
-            "image": "https://uauposters.com.br/media/catalog/product/cache/1/thumbnail/800x930/9df78eab33525d08d6e5fb8d27136e95/1/9/199020140605-199020140605-uau-posters-filmes-todo-poderoso-2--evan-almighty-.jpg"    
-        }
-    ]
+    "budget": 8000,
+    "image": "https://img1.icarros.com/dbimg/galeriaimgmodelo/2/42734_1"
 }
