@@ -56,7 +56,7 @@ async function getCar(req,res){
         const carGet = await Car.findById(id);
 
         if(!carGet){
-            res.status(404).json({message:"Não foi encontrado nenhum Carro!!"})
+            res.status(404).json({menssage:"Não foi encontrado nenhum Carro!!"})
             return 
         }
 
@@ -73,7 +73,7 @@ async function deleteCar(req,res){
         const id = req.params.id;
         const deleteCar = await Car.findByIdAndDelete(id);
 
-        if(!carGet){
+        if(!deleteCar){
             res.status(404).json({message:"Não foi encontrado nenhum Carro!!"})
             return
         }
